@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "styles.css">
         <title>TK Photography_Broadway</title>
     </head>
-    <body>
-        <h1>
-            TK Photography
-        </h1>
+    <header>
+        <h1>TK Photography</h1>
+    </header>
         <nav>
             <ul>
                 <li><a href ="#about">About</a></li>
@@ -18,76 +18,113 @@
                 <li><a href ="#top">top</a></li>
             </ul>
         </nav>
-        <main>
-            <h2>About</h2>
-                <p>Hello!</p>
-                <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. </p>
-            <h2>Gallery</h2>
-                <p>Here are some highlights of my work. The location and year are in the caption.</p>
-                <figure>
-                    <image src = "images/Chile.png" alt = "sandy beach with setting sun and rocks"></image>
-                    <figcaption>Chile,2001</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Guatemala.png" alt = ""></image>
-                    <figcaption>Guatemala, 1997</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Hawaii.png" alt = ""></image>
-                    <figcaption>Hawaii, 2010</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Iran.png" alt=""></image>
-                    <figcaption>Iran, 1999</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Ireland.png" alt = ""></image>
-                    <figcaption>Ireland, 2012</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Italy.png" alt = ""></image>
-                    <figcaption>Italy, 2015</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Moab-Desert.png" alt = ""></image>
-                    <figcaption>Mohab Desert, 2020</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Rocky-Mountains.png" alt = ""></image>
-                    <figcaption>Rocky-Mountains, 2009</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Switzerland.png" alt = ""></image>
-                    <figcaption>Switzerland, 2014</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/UK.png" alt = ""></image>
-                    <figcaption>UK, 2005</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/USA.png" alt = ""></image>
-                    <figcaption>USA, 2021</figcaption>
-                <figure/>
-                <figure>
-                    <image src = "images/Wyoming.png" alt = ""></image>
-                    <figcaption>Wyoming, 2021</figcaption>
-                <figure/>
-            <h2>Contact</h2>
-                <p>Please fill out this form and I'll conect with you soon.</p>
-                <form action = "" method = "get" class="contact-form">
-                    <div class = "contact-form">
-                        <label for = "Name">Name</label><br>
-                        <input type = "text" id ="name" value = "Your full name"
-                        <label for = "Email">Email</label><br>
-                        <input type = "text" id ="email" value = "Enter your email address"
-                        <label for = "Name">Name</label><br>
-                        <input type = "Message" id ="message" value = "What can I help you with?"
+        
+        <div id = "gallery-container">
+            <main>
+                <section>
+                    <h2 id = "about">About</h2>
+                        <p id = "about-p">Hello!<br>
+                        I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. </p>
+                </section>
+                
+                <section>
+                    <h2 id = "gallery">Gallery</h2>
+                        <p id = "gallery-p">Here are some highlights of my work. The location and year are in the caption.</p>
+                </section>
+
+                    <div class = "img-gallery">
+                        <figure>
+                            <img src = "images/Chile.png" alt = "sandy beach with setting sun and rocks" >
+                            <figcaption id = "a">Chile, 2001</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class = "img-gallery">
+                        <figure>
+                            <img src = "images/Guatemala.png" alt = "purple sky, water, and flowers" >
+                            <figcaption id ="b">Guatemala, 1997</figcaption>
+                        </figure>
+                        </div>
+                    <div class = "img-gallery">
+                        <figure>
+                            <img src = "images/Hawaii.png" alt = "mountain covered in green with the ocean touching the shore" >
+                            <figcaption id ="c">Hawaii, 2010</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/Iran.png" alt="mountains in the distance with red and orange shrubs on dry ground" >
+                            <figcaption id = "d">Iran, 1999</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/Ireland.png" alt = "green hillside with different green trees" >
+                            <figcaption id ="e">Ireland, 2012</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/Italy.png" alt = "snowy mountain side with clear blue water and a canoe" >
+                            <figcaption id ="f">Italy, 2015</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/Moab-Desert.png" alt = " photo taken from inside a cave looking out at the sunset" >
+                            <figcaption id ="g">Mohab Desert, 2020</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/Rocky-Mountains.png" alt = "rocky mountain cliffs with ocean lapping against the shore" >
+                            <figcaption id ="h">Rocky Mountains, 2009</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/Switzerland.png" alt = "mountain range in the distance with tall green trees and snow">
+                            <figcaption id ="i">Switzerland, 2014</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/UK.png" alt = "green hillside that goes off into the distance" >
+                            <figcaption id ="j">UK, 2005</figcaption>
+                        </figure>
+                    </div>
+                        <div class="img-gallery">
+                        <figure>
+                            <img src = "images/USA.png" alt = "wildflowers growing in a medow with storm clouds" >
+                            <figcaption id ="k">USA, 2021</figcaption>
+                        </figure>
+                    </div>
+                    <div class="img-gallery">
+                        <figure>
+                            <img src = "images/Wyoming.png" alt = "a pond with a reflection of the mountain range shown in the distance and tall green trees" >
+                            <figcaption id ="l">Wyoming, 2021</figcaption>
+                        </figure>
+                    </div>
+            </main>
+        </div>
+
+        <aside>
+                <h2>Contact</h2>
+                    <p>Please fill out this form and I'll conect with you soon.</p>
+            
+                <form id = "contact-form">
+                    <div class = "form-container">
+                        <label for = "name">Name</label>
+                        <input type = "text" id ="name" placeholder="Your full name" ><br>
+                        <label for = "email">Email</label>
+                        <input type = "text" id ="email" placeholder="Enter you email address" ><br>
+                        <label for = "message"> Message</label>
+                        <input type = "text" id ="message" placeholder="What can I help you with?"><br>
                         <input type = "submit" value = "Submit">
                     </div>
                 </form>
-            <footer>
-                <p><small>Copyright 2021 TK Photography</small></p>
-            </footer>
-        </main>
-    </body>
+        </aside>
+        <footer>
+            <p><small>Copyright 2021 TK Photography</small></p>
+        </footer>
 </html>
